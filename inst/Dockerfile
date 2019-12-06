@@ -20,6 +20,9 @@ RUN apt-get update && \
 RUN Rscript -e 'devtools::install_github(c(\
   "r-lib/rlang",\
   "r-lib/lifecycle",\
+  "r-lib/ellipsis",\
+  "r-lib/usethis",\
+  "r-lib/fs",\
   "2DegreesInvesting/r2dii",\
   "2DegreesInvesting/r2dii.utils",\
   "2DegreesInvesting/r2dii.dataraw",\
