@@ -1,4 +1,4 @@
-# r2dii-ci
+# r2dii.ci
 
 Build the image maurolepore/r2dii.ci (tag 3.5) from ./3.5/Dockerfile:
 
