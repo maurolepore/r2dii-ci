@@ -6,13 +6,13 @@
 #' @export
 #'
 #' @examples
-#' r_version <- glue::glue("3.{6:2}.0")
+#' r_version <- glue::glue("3.{6:3}")
 #' enlist_dockerfile(r_version)
 enlist_dockerfile <- function(r_version) {
   path <- system.file("Dockerfile", package = "r2dii.ci")
   docker_file <- readLines(path)
   from_image <- sprintf(
-    "FROM colinfay/r-ci-tidyverse:%s",
+    "FROM rocker/tidyverse:%s",
     r_version
   )
 

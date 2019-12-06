@@ -16,6 +16,6 @@ A list of strings.
 Create a list of docker files from a vector or r versions
 }
 \examples{
-r_version <- glue::glue("3.{6:2}.0")
+r_version <- glue::glue("3.{6:3}")
 enlist_dockerfile(r_version)
 }
